@@ -1,6 +1,27 @@
 <template>
+  <component
+  :is="activeComponent"
+  >
+  </component>
 </template>
 <script>
-export default {}
+ import GameCards from "./components/GameCards.vue"
+ import Celebrate from "./components/Celebrate.vue"
+ import Failure from "./components/Failure.vue"
+
+
+export default {
+    data(){
+        return{
+            activeComponent: "app-game-cards"
+        }
+
+    },
+    components: {
+        appGameCards: GameCards,
+        appCelebrate: Celebrate,
+        appFailure: Failure,
+    }
+}
 </script>
 <style></style>
