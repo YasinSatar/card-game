@@ -10,7 +10,6 @@
  width: 200px;
  height: 232px;
  border-radius: 5px;
-
  display: block;
  margin-top:10px;
  background-image:url('../assets/vue-js-egitim-background.jpg');
@@ -18,6 +17,7 @@
  background-repeat:no-repeat;
  background-position:center;
  box-shadow:0px 0px 30px rgb(75, 252, 243);
+ cursor:pointer;
 }
 
 .card img{
