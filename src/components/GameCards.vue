@@ -1,5 +1,6 @@
 <template>
    <div class="game-area">
+    <p>{{answer}}</p>
     <h1 class="title">Poğaça <span>Nerede</span><strong>?</strong></h1>
     <h4 class="description">Açık kartlardan birini seçtikten sonra, kapalı olan karta tıklayınız.</h4>
     <div class="container">
@@ -65,9 +66,9 @@ export default{
                 this.activeCard=answer.component;
                 setTimeout(()=>{
                     if(answer.id == this.selectedCard){
-                    alert("Doğru");
+                    this.$emit("isCorrectEvent", "app-celebrate");
                 }else{
-                    alert("Yanlış");
+                    this.$emit("isCorrectEvent", "app-failure");
                 }
                 },1500);
                
