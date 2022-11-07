@@ -105,12 +105,7 @@ export default{
     gap:15px;
     flex-wrap: wrap;
 }
-@media screen and (max-width:768px){
 
-    .card-container{
-
-}
-}
 .selected{
     box-shadow:0px 0px 30px rgb(75, 252, 243)!important;
     transition:box-shadow .5s;

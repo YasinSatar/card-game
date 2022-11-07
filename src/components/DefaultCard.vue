@@ -25,4 +25,29 @@
    width:100%;
    border-radius: 5px;
 }
+@media screen and (max-width:768px){
+.card{
+    width: calc(35%);
+    height:350px;
+    flex-grow: 0;
+    border:1px solid #AEAEAE;
+    line-height: 0;
+}
+.card img{
+    object-fit: cover;
+}
+}
+@media screen and (max-width:568px){
+.card{
+    width: calc(35%);
+    height:180px;
+    flex-grow: 0;
+    border:1px solid #AEAEAE;
+    line-height: 0;
+}
+.card img{
+    object-fit: cover;
+}
+}
+
 </style>

@@ -34,7 +34,6 @@ export default{
 }
 
 @media screen and (max-width:768px){
-
     .card{
         width: calc(100%/3);
         height:auto;
