@@ -58,7 +58,22 @@ export default{
     },
     methods:{
         showCard(answer){
-            this.activeCard= answer.component;
+
+            if(this.selectedCard == null){
+                alert("İlk olarak bir kart seçiniz!")
+            }else{
+                this.activeCard=answer.component;
+                setTimeout(()=>{
+                    if(answer.id == this.selectedCard){
+                    alert("Doğru");
+                }else{
+                    alert("Yanlış");
+                }
+                },1500);
+               
+                
+            }
+            
         }
     }
 
@@ -101,6 +116,7 @@ export default{
 }
 .card.answer{
  box-shadow:0px 0px 30px rgb(75, 252, 243)!important;
+pointer-events: none !important;
 }
 .card.answer:hover{
  box-shadow:0px 0px 30px rgb(75, 252, 243)!important;
@@ -130,13 +146,13 @@ animation: rotate-all ease-in-out 1.5s forwards;
 /*** Animation for Closed Card  */
 .rotate-enter{}
 .rotate-enter-active{
-animation: rotate-in 1s  ease-in-out forwards;
+animation: rotate-in .5s  ease-in-out forwards;
 }
 .rotate-leave{
 
 }
 .rotate-leave-active{
-    animation: rotate-out 1s ease-in-out  forwards;
+    animation: rotate-out .5s ease-in-out  forwards;
 }
 @keyframes rotate-in {
     from{
