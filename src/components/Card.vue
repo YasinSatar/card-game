@@ -12,13 +12,13 @@ export default{
 <style scoped>
 .card{
   width: 200px;
-  height: 232px;
-  border-radius: 5px;
+  height: 300px;
+  border-radius: 20px;
   border:1px solid #AEAEAE;
   display: block;
   transition:transform .5s,box-shadow .6s;
   margin-top:10px;
-
+  object-fit: scale-down;
 }
 .card:hover{
     cursor:pointer;

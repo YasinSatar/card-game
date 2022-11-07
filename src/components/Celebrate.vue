@@ -45,7 +45,7 @@ export default{
     outline:none;
     cursor:pointer;
     transition:all .5s;
-    border:1px solid darkgreen;
+    border:1px solid lightgreen;
 }
 
 .container button:hover{

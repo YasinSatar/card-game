@@ -46,6 +46,7 @@ export default{
     outline:none;
     cursor:pointer;
     transition:all .5s;
+    border:2px solid darksalmon;
 }
 
 .container button:hover{

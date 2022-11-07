@@ -1,8 +1,8 @@
 <template>
    <div class="game-area">
-    <p>{{answer}}</p>
-    <h1 class="title">Poğaça <span>Nerede</span><strong>?</strong></h1>
-    <h4 class="description">Açık kartlardan birini seçtikten sonra, kapalı olan karta tıklayınız.</h4>
+    <p>{{/*answer*/}}</p>
+    <h1 class="title">Which is the <span>Right</span><strong>?</strong></h1>
+    <h4 class="description">After selecting one of the cards open, click on the card that is closed.</h4>
     <div class="container">
         <transition-group name="rotate-all" class="card-container" appear>
         <app-card 
@@ -45,11 +45,12 @@ export default{
             answer: {},
             activeCard: "app-default-card",
             cards: [
-                {id:1,component: "app-card", image: "/src/assets/card-1.jpg"},
-                {id:2,component: "app-card", image: "/src/assets/card-2.jpg"},
-                {id:3,component: "app-card", image: "/src/assets/card-3.jpg"},
-                {id:4,component: "app-card", image: "/src/assets/card-4.jpg"},
-                {id:5,component: "app-card", image: "/src/assets/card-5.jpg"},
+                {id:1,component: "app-card", image: "/src/assets/cards/card-a.png"},
+                {id:2,component: "app-card", image: "/src/assets/cards/card-j.png"},
+                {id:3,component: "app-card", image: "/src/assets/cards/card-q.png"},
+                {id:4,component: "app-card", image: "/src/assets/cards/card-k.png"},
+                {id:5,component: "app-card", image: "/src/assets/cards/card-10.png"},
+                
             ],
         }
     },
