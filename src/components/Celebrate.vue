@@ -9,8 +9,8 @@
 <script>
 export default{
     methods:{
-        newGamer(){
-
+        newGame(){
+            this.$emit("activeComponentEvent", "app-game-cards");
         }
     },
 }
