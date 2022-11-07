@@ -14,7 +14,7 @@ export default{
   width: 200px;
   height: 232px;
   border-radius: 5px;
-  border:1px solid #666;
+  border:1px solid #AEAEAE;
   display: block;
   transition:transform .5s,box-shadow .6s;
   margin-top:10px;
@@ -31,5 +31,19 @@ export default{
     border-radius: 5px;
     user-select: none;
 
+}
+
+@media screen and (max-width:768px){
+
+    .card{
+        width: calc(100%/3);
+        height:auto;
+        flex-grow: 0;
+        border:1px solid #AEAEAE;
+        line-height: 0;
+    }
+    .card img{
+        object-fit: cover;
+    }
 }
 </style>
