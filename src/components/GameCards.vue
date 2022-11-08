@@ -62,7 +62,7 @@ export default{
         showCard(answer){
 
             if(this.selectedCard == null){
-                alert("İlk olarak bir kart seçiniz!")
+                alert("First, choose a card!")
             }else{
                 this.activeCard=answer.component;
                 setTimeout(()=>{
