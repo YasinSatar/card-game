@@ -1,4 +1,4 @@
-# pogaca-nerede-kart-oyunu
+# vuejs-card-game
 
 > A Vue.js project
 
